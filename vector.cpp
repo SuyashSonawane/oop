@@ -45,32 +45,50 @@ class Vector{
             p("Index doesnt exist");
         }
     }
+    void showMenu(){
+        int input2;
+        do{
+            p("1.Accept\n2.Display\n3.Modify\n4.Multiply=>");
+            cin>>input2;
+            switch (input2)
+            {
+            case 1:
+                accept();
+                break;
+            case 2:
+                display();
+                break;
+            case 3:
+                modify();
+                break;
+            case 4:
+                mul();
+                break;
+            default:
+                break;
+            }
+        }
+    while(1);
+    }
+    
 };
 
 int main(){
+    int input1,input2;
+    p("Give datatype for vector\n1.INT\n2.FLOAT");
+    cin>>input1;
+    switch (input1)
+    {
+    case 1:
     Vector<int,int> a;
-    int input;
-    p("Vector operations");
-    do{
-        p("1.Accept\n2.Display\n3.Modify\n4.Multiply=>");
-        cin>>input;
-        switch (input)
-        {
-        case 1:
-            a.accept();
-            break;
-        case 2:
-            a.display();
-            break;
-        case 3:
-            a.modify();
-            break;
-        case 4:
-            a.mul();
-            break;
-        default:
-            break;
-        }
-    }while(1);
+        a.showMenu();
+        break;
+    case 2:
+      Vector<int,int> b;
+        b.showMenu();
+    default:
+        break;
+    }
+    
     return 0;
 }

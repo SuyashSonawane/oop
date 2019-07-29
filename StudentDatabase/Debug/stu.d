@@ -1,0 +1,1 @@
+stu.d: ../stu.cpp

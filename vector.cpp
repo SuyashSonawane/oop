@@ -14,7 +14,8 @@ class Vector{
         }
     }
     void display(){
-        cout<<"\nDisplaying vector data\n";
+        cout<<"\nDisplaying vector data\n"
+        ;
     }
 };
 

@@ -193,9 +193,9 @@ public:
 int main()
 {
     Directory d;
-    // d.add();
+    d.add();
     d.show();
-    d.search();
+    // d.search();
     // d.update();
     // d.show();
 }
